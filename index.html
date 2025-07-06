@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>はじめてのwebページ</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>こんちゃ</h1>
-        <p>これは私の最初のウェブページです</p>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="研究紹介サイトのホームページ" />
+  <title>Home | Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body onclick="closeNav(event)">
+  <!-- Language Switch -->
+  <div class="language-switch">
+    <button onclick="switchLang('ja')">日本語</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-toggle" onclick="toggleNav(event)">
+    ☰
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="research/master.html">RESEARCH</a></li>
+        <li><a href="development/satellite.html">DEVELOPMENT</a></li>
+        <li><a href="output/index.html">OUTPUT</a></li>
+        <li><a href="blog/index.html">BLOG</a></li>
+        <li><a href="copyrights.html">COPYRIGHTS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb">
+    HOME
+  </nav>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <ul>
+      <li><a href="#about">サイト紹介 / About</a></li>
+      <li><a href="#news">お知らせ / News</a></li>
+    </ul>
+  </div>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <section id="about">
+      <h1 class="section-title">サイト紹介 / About This Site</h1>
+      <p class="lang-ja">
+        このWebサイトは、研究活動・開発プロジェクト・成果物・日々の記録をまとめた個人ページです。
+      </p>
+      <p class="lang-en" style="display:none">
+        This website is a personal archive of research activities, development projects, outputs, and daily records.
+      </p>
+    </section>
+
+    <section id="news">
+      <h2 class="section-title">お知らせ / News</h2>
+      <p class="lang-ja">新しい研究テーマの紹介ページを追加しました。</p>
+      <p class="lang-en" style="display:none">A new research topic page has been added.</p>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>公開日: 2025年7月6日<br />最終更新日: 2025年7月6日</p>
+    <p><a href="blog/index.html">他の記事も見る</a></p>
+    <p><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+      <img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" alt="CC BY-NC" /></a>
+    </p>
+  </footer>
+
+  <!-- スクリプト -->
+  <script src="assets/js/lang-switch.js"></script>
+  <script src="assets/js/nav-toggle.js"></script>
+</body>
 </html>

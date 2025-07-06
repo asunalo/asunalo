@@ -1,0 +1,95 @@
+/* 全体の基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 1em;
+  }
+  
+  /* 見出しスタイル */
+  .section-title {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.2em;
+    margin-top: 2em;
+  }
+  
+  /* 言語切替ボタン */
+  .language-switch {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  
+  /* ナビゲーションアイコン */
+  .nav-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* ナビメニュー */
+  #nav-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #f0f0f0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: max-content;
+  }
+  
+  .nav-toggle:hover #nav-menu {
+    display: block;
+  }
+  
+  .nav-toggle.active #nav-menu {
+    display: block;
+  }
+
+  #nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #nav-menu li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* パンくずリスト */
+  .breadcrumb {
+    font-size: 0.9em;
+    margin: 1.5em 0 1em;
+  }
+  
+  /* 目次 */
+  .toc ul {
+    padding-left: 1.5em;
+  }
+  
+  /* 図とキャプション */
+  figure {
+    margin: 2em 0;
+  }
+  
+  figcaption {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 0.5em;
+  }
+  
+  /* フッター */
+  footer {
+    margin-top: 4em;
+    font-size: 0.85em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+  }
+  

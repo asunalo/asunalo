@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="現在の研究紹介ページ" />
+  <title>Research | Your Name</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body onclick="closeNav(event)">
+  <!-- Language Switch -->
+  <div class="language-switch">
+    <button onclick="switchLang('ja')">日本語</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-toggle" onclick="toggleNav(event)">
+    ☰
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="master.html">RESEARCH</a></li>
+        <li><a href="../development/satellite.html">DEVELOPMENT</a></li>
+        <li><a href="../output/index.html">OUTPUT</a></li>
+        <li><a href="../blog/index.html">BLOG</a></li>
+        <li><a href="../copyrights.html">COPYRIGHTS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="../index.html">HOME</a> &gt; RESEARCH
+  </nav>
+
+  <!-- TOC -->
+  <div class="toc">
+    <ul>
+      <li><a href="#overview">概要 / Overview</a></li>
+      <li><a href="#objectives">研究目的 / Objectives</a></li>
+      <li><a href="#methods">手法 / Methods</a></li>
+      <li><a href="#results">結果 / Results</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section id="overview">
+      <h1 class="section-title">研究概要 / Research Overview</h1>
+      <p class="lang-ja">
+        本ページでは、現在進行中の研究について概要を紹介します。
+      </p>
+      <p class="lang-en" style="display:none">
+        This section introduces an overview of ongoing research.
+      </p>
+    </section>
+
+    <section id="objectives">
+      <h2 class="section-title">研究目的 / Objectives</h2>
+      <p class="lang-ja">研究の目的をここに記述してください。</p>
+      <p class="lang-en" style="display:none">Please describe the research objectives here.</p>
+    </section>
+
+    <section id="methods">
+      <h2 class="section-title">手法 / Methods</h2>
+      <p class="lang-ja">研究手法をここに記述してください。</p>
+      <p class="lang-en" style="display:none">Please describe the research methods here.</p>
+    </section>
+
+    <section id="results">
+      <h2 class="section-title">結果 / Results</h2>
+      <p class="lang-ja">研究成果や途中経過などを記述します。</p>
+      <p class="lang-en" style="display:none">Here you can describe research results or ongoing outcomes.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>公開日: 2025年7月6日<br />最終更新日: 2025年7月6日</p>
+    <p><a href="../blog/index.html">他の記事も見る</a></p>
+    <p><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+      <img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" alt="CC BY-NC" /></a>
+    </p>
+  </footer>
+
+  <script src="../assets/js/lang-switch.js"></script>
+  <script src="../assets/js/nav-toggle.js"></script>
+</body>
+</html>
