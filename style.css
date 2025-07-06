@@ -1,0 +1,12 @@
+body{
+    background-color:beige; /*背景*/
+    font-family: Arial, Helvetica, sans-serif; /*フォント*/
+    text-align: center; /*中央揃え*/
+}
+h1{
+    color: blue;
+}
+p{
+    color: coral; /*段落の色*/
+    font-size: 18 px; /*文字サイズ*/
+}
